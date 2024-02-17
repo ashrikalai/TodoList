@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #2f363e;
+  
+}
+.box
+{
+    position: relative;
+    width: 450px;
+    height: 550px;
+    background: #2f363e;
+    box-shadow: 25px 25px 75px rgba(0,0,0,0.25),
+    10px 10px 70px rgba(0,0,0,0.25),
+    inset 5px 5px 10px rgba(0,0,0,0.5),
+    inset 5px 5px 20px rgba(255,255,255,0.2),
+    inset -5px -5px 15px rgba(0,0,0,0.75)
+}
+
+h2{
+    width:100x;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    font-size: 1.25cm;
+    margin-bottom: 10px;
+}
+#inputBx
+{
+    position:relative;
+    width:60%;
+    border:none;
+    outline: none;
+    padding:15px 20px;
+    border-radius: 30px;
+    font-size: 0.5cm;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.25),inset 2px 2px 5px rgba(0,0,0,0.5),inset -3px -3px 5px(0,0,0,0.5);
+    margin-left: 30px;
+    
+}
+
+button{
+    border:none;
+    outline: none;
+    padding:16px 40px;
+    background: #ff4596 ;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+   /* margin-left: 350px;*/
+    margin-bottom: 50px;
+}
+ul li{
+
+    list-style: none;
+    font-size:17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    margin-left:50px;
+}
+ul li::before{
+    content:'';
+    position:absolute;
+    height: 28px;
+    width:28px;
+    border-radius: 50%;
+    background-image: url(https://cdn.icon-icons.com/icons2/1856/PNG/512/radio-button-unchecked_116724.png);
+    background-size: cover;
+    background-position: center;
+    top:12px;
+    left:8px;
+}
+ul li.checked{
+    color:rgb(191, 0, 255);
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/441/750/non_2x/tick-vector-icon.jpg)
+}
+ul li span{
+    position: absolute;
+    right:0;
+    top: 5px;
+    width: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+ul li span:hover{
+    background: #edeef0;
+}
